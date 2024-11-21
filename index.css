@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background:linear-gradient(90deg,#8b4513 , #800000 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body h1 {
+    margin:2rem auto;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    padding: 0.6rem;
+    border: 1px solid white ;
+    border-radius: 12px ;
+
+
+}
+body .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    background-color: white;
+    padding: 1.5rem  ;
+    font-size: 60px  ;
+    border-radius: 10px ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px ;
+}
+body .box button{
+border: none;
+padding: 20px ;
+border-radius: 10px ;
+color: white;
+font-size: 15px ;
+cursor:pointer;
+}
+body .box button.start{
+    background-color: greenyellow;
+}
+body .box button.restart{
+    background-color:#800000 ;
+}
+body .box button.stop{
+    background-color:blueviolet ;
+}
+body .time .seconds::before {
+content: ":"; 
+} 
+body .time .seconds::after {
+content: ":"; 
+} 
